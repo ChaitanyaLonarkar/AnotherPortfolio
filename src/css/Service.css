@@ -1,0 +1,28 @@
+
+/* .myservices{
+    margin: 5rem;
+    color: aliceblue;
+} */
+
+.eachservice{
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    gap: 2rem ;
+    border-bottom: 1px solid rgba(172, 255, 47, 0.203);
+
+}
+
+.eachservice:nth-child(even){
+    flex-direction: row-reverse;
+    
+}
+.sl{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: larger;
+
+}
+.sl .des{
+    color: #c1d7ff;
+}

@@ -1,0 +1,649 @@
+@media (min-width: 480px) and (max-width: 768px) {
+    .logo,
+    .git {
+        display: none;
+    }
+    .links ul {
+        gap: 31px;
+        margin: 0;
+        padding: 0;
+    }
+    .home {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        /* margin: 15px 0px 0px; */
+        margin: 5% 0% 0% 0%;
+        /* width: 100vw; */
+        padding: 0px;
+        scale: 0.9;
+        gap: 3em;
+        overflow: hidden;
+    }
+
+    .home img {
+        width: 272px;
+    }
+    .home h1 {
+        margin: 0;
+    }
+    .home .left {
+        font-size: 28px;
+        align-items: center;
+        gap: 15px;
+    }
+    .f {
+        width: 444px;
+        height: 80px;
+        text-align: center;
+    }
+    .paragraph {
+        margin: 3rem;
+    }
+    .boldTitle {
+        font-size: 3.5rem;
+        padding: 0rem 5rem;
+    }
+    .boldTitle i {
+        text-shadow: -6px 5px #00ff3e;
+    }
+
+    .about-section {
+        /* height: 100vh; */
+        margin-bottom: 6rem;
+    }
+    .about-head {
+        padding-left: 89px;
+        font-size: 3.6rem;
+        margin-bottom: 40px;
+    }
+    .about-head p {
+        margin: 0;
+    }
+
+    .about-edu .about p {
+        line-height: -0.7rem;
+    }
+
+    .about-edu {
+        margin: 0px;
+        /* gap: 0px; */
+    }
+    .about-edu h1 {
+        margin: 0;
+    }
+
+    .about-edu a {
+        /* background: white; */
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        width: 11rem;
+    }
+
+    .about {
+        border-right: 0px;
+        padding-right: 0rem;
+        padding: 2rem;
+    }
+    .education {
+        padding: 2rem;
+        font-size: small;
+        /* gap: 1rem; */
+    }
+
+    .edu-year {
+        gap: 0px;
+    }
+    .edu p {
+        margin: 0;
+    }
+    .wrap {
+        display: none;
+    }
+    .projects {
+        padding: 0px;
+        gap: 20px;
+    }
+    .project {
+        width: 80%;
+    }
+    .pleft h2 {
+        font-size: 4rem;
+        padding: 4rem;
+    }
+    .marquee {
+        font-size: 47px;
+        -webkit-text-stroke-width: 0.7px;
+    }
+    .desc {
+        gap: 32px;
+        padding: 35px;
+    }
+    .pimg img {
+        /* width: 28.7em; */
+        width: 100%;
+    }
+
+    .white {
+        font-size: 4.5rem;
+    }
+    .sphereWrapper {
+        left: calc(50% - var(--size) / 2.9);
+        top: 51%;
+    }
+
+    .experience {
+        padding: 2rem;
+    }
+    .e-head {
+        font-size: 4rem;
+        padding-left: 3rem;
+    }
+
+    .experience-detail {
+        padding: 1.2rem;
+    }
+    .el {
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+    }
+    .el h2 {
+        font-size: 1.5em;
+        /* margin: 0; */
+        height: 15px;
+    }
+
+    .cl h2 {
+        font-size: 4rem;
+    }
+    .cr {
+        padding-left: 0rem;
+        border-left: 0px solid #8080803b;
+    }
+    .contact {
+        padding: 4rem;
+        /* justify-content: flex-start; */
+    }
+
+    form {
+        width: 100%;
+    }
+    .circles {
+        width: 91%;
+    }
+    .overlay {
+        width: 86vw;
+        display: none;
+    }
+    .overlay2 {
+        display: none;
+        /* top: 625px;
+    width: 85vw; */
+    }
+
+    .each-skill {
+        padding: 0 40px;
+    }
+    .mark {
+        margin: 10rem 0;
+    }
+
+    .eachservice {
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+        /* gap: 2rem ; */
+    }
+
+    .sl h1,
+    .sl .des {
+        text-align: center;
+    }
+    .sl {
+        gap: 1rem;
+        font-size: medium;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1124px) {
+    .outer {
+        width: 85%;
+        padding: 10px;
+    }
+    .links ul {
+        gap: 20px;
+        font-size: medium;
+        padding: 9px 0;
+    }
+
+    .circles {
+        width: 95%;
+    }
+    .home {
+        gap: 3em;
+    }
+    .home .left {
+        /* gap: 12px; */
+        font-size: 1.6rem;
+        /* width: 46rem; */
+    }
+    .home img {
+        width: 260px;
+    }
+    .f {
+        width: 447px;
+        height: 65px;
+    }
+
+    .boldTitle {
+        font-size: 6rem;
+    }
+
+    .about {
+        width: 70vw;
+        font-size: larger;
+        border-right: 0px;
+        justify-content: space-between;
+    }
+    .about-edu {
+        gap: 100px;
+    }
+    .education {
+        width: 70vw;
+    }
+    .about-head {
+        padding-left: 75px;
+    }
+
+    .edu p {
+        font-size: 18px;
+    }
+
+    .projects {
+        padding: 60px;
+    }
+    .project {
+        width: 39vw;
+    }
+    .pimg img {
+        width: 100%;
+    }
+
+    .sphereWrapper {
+        top: 57%;
+    }
+    .e-head {
+        font-size: 4.5rem;
+    }
+    .el h2 {
+        font-size: 2em;
+        margin: 0;
+    }
+    .experience-detail {
+        padding: 3rem 0;
+    }
+    .line {
+        left: 0;
+    }
+    .des {
+        font-size: larger;
+    }
+    .contact {
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+    .cl h2 {
+        font-size: 4rem;
+    }
+    .slinks {
+        gap: 15px;
+        padding-left: 10px;
+    }
+    .cr {
+        padding-left: 3rem;
+    }
+    .form h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+        flex-wrap: wrap;
+        /* margin: 15px 0px 0px; */
+        margin: 10% 0% 0% 0%;
+        width: 100vw;
+        padding: 0px;
+        scale: 0.9;
+        gap: 3em;
+        overflow: hidden;
+    }
+    .home h1 {
+        margin: 0;
+    }
+    .home .left {
+        font-size: 20px;
+        align-items: center;
+        gap: 15px;
+    }
+    .home h3 {
+        font-size: 15px;
+    }
+    .logo,
+    .git {
+        display: none;
+    }
+
+    .outer {
+        width: 90%;
+        /* padding: 10px; */
+        padding: 4px;
+    }
+    .links ul {
+        gap: 20px;
+        font-size: small;
+        padding: 9px 0;
+    }
+    .f {
+        width: 360px;
+        height: 50px;
+        text-align: center;
+    }
+    .fff {
+        height: 98px;
+    }
+    .home img {
+        /* width: 220px; */
+        width: 190px;
+        border-radius: 10px 56px;
+    }
+    .kbtn {
+        gap: 13px;
+        align-items: center;
+    }
+
+    .kbtn button {
+        font-size: 15px;
+        padding: 10px;
+        height: -webkit-fill-available;
+    }
+    .slinks {
+        font-size: x-large;
+        gap: 10px;
+    }
+    .sectionHome {
+        /* position: fixed; */
+        left: 0em;
+    }
+    .projects {
+        flex-wrap: wrap;
+    }
+    .prights {
+        flex-wrap: wrap;
+        /* background: black; */
+    }
+    .section .grid {
+        padding: 2rem;
+        gap: 8rem;
+    }
+    .section .grid .white {
+        font-size: 4rem;
+    }
+    .section {
+        padding: 4rem 0rem;
+    }
+    #sectionHome {
+        /* height: 80vh; */
+        margin-bottom: 20%;
+    }
+    .circles {
+        height: 114%;
+        width: 83%;
+        /* filter: blur(1px); */
+    }
+    .about-section {
+        /* height: 100vh; */
+        margin-bottom: 6rem;
+    }
+    .about-head {
+        padding-left: 40px;
+        font-size: 3rem;
+        /* margin-bottom: 40px; */
+        margin-bottom: 10px;
+    }
+    .about-head p {
+        margin: 0;
+    }
+
+    .about-edu .about p {
+        line-height: 1.8rem;
+    }
+
+    .about-edu {
+        margin: 0px;
+        gap: 0px;
+    }
+    .about-edu h1 {
+        margin: 0;
+    }
+
+    .about-edu a {
+        /* background: white; */
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        width: 11rem;
+    }
+
+    .about {
+        border-right: 0px;
+        padding-right: 0rem;
+        padding: 2rem;
+    }
+    .education {
+        padding: 2rem;
+        font-size: x-small;
+        gap: 1rem;
+    }
+
+    .edu-year {
+        gap: 0px;
+    }
+    .edu p {
+        margin: 0;
+    }
+    .wrap {
+        display: none;
+    }
+    .projects {
+        padding: 0px;
+        gap: 20px;
+    }
+    .pleft h2 {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+    .marquee {
+        font-size: 37px;
+        -webkit-text-stroke-width: 0.3px;
+    }
+    .project {
+        width: 87vw;
+        overflow: hidden;
+    }
+    .projects a {
+        padding: 0.4rem;
+        /* width: 5rem; */
+    }
+    .prights {
+        background: transparent;
+    }
+    .desc {
+        gap: 15px;
+        padding: 0px 12px 20px;
+    }
+
+    .experience {
+        padding: 2rem;
+        /* width: 86vw; */
+        gap: 1rem;
+        /* height: 100vh; */
+    }
+    .e-head {
+        font-size: 3rem;
+    }
+
+    .experience-detail {
+        padding: 0;
+        margin: 2rem 0rem;
+    }
+    .experience-detail .h2 {
+        font-size: 0.4rem;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .experience-detail .des,
+    .er {
+        font-size: 0.8rem;
+    }
+    .line {
+        width: 100%;
+        left: 0;
+    }
+    /* .el{
+      width: 132%;
+
+} */
+    .cl h2 {
+        font-size: 3.7rem;
+        margin: 0;
+    }
+    .contact .cl {
+        gap: 1rem;
+    }
+    .contact {
+        /* margin-bottom: 4rem; */
+        /* margin: 0; */
+        gap: 4rem;
+    }
+    .contact .cr {
+        padding: 0rem;
+        border: none;
+        /* width: 75vw; */
+    }
+    .form h2 {
+        font-size: 1.8rem;
+    }
+    form {
+        /* width: 80vw; */
+        width: 100%;
+    }
+    /* .form {
+  } */
+    .form h3 {
+        font-size: 1.2em;
+    }
+    .info {
+        gap: 10px;
+        margin: 2rem 0rem 2rem;
+    }
+    .info p {
+        margin: 0;
+        font-size: smaller;
+    }
+
+    /* creative frontend */
+    .sectionn .grid {
+        gap: 4rem;
+    }
+
+    .paragraph {
+        font-size: medium;
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .boldTitle {
+        font-size: 2.4rem;
+    }
+    .boldTitle i {
+        text-shadow: -5px 4px #00ff3e;
+    }
+
+    .circularCarouselWrapper {
+        height: 100%;
+    }
+
+    .sphereWrapper {
+        top: 66%;
+    }
+
+    .mark {
+        /* padding: 5rem; */
+        margin: 5rem 2rem;
+    }
+    .l,
+    .r {
+        width: 20vw;
+        height: 158px;
+    }
+    .overlay {
+        width: 86vw;
+        display: none;
+    }
+    .overlay2 {
+        display: none;
+        /* top: 625px;
+    width: 85vw; */
+    }
+    /* .scale {
+    transform: scale(0.7);
+  } */
+    .each-skill {
+        padding: 0 20px;
+    }
+
+    .each-skill .image {
+        width: 70px;
+        height: 70px;
+    }
+    .each-skill p {
+        font-size: 15px;
+    }
+    .white {
+        font-size: 3.5rem;
+        padding-left: 3rem;
+    }
+    .mark {
+        margin: 5rem 0;
+    }
+
+    .eachservice {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+
+    .sl h1,
+    .sl .des {
+        text-align: center;
+        
+    }
+    .sl {
+        gap: 1rem;
+        font-size: medium;
+    }
+    .sl h1 {
+        text-align: center;
+        margin: 0;
+        font-size: large;
+    }
+    .sl .des {
+      text-align: center;
+      margin-bottom: 20px;
+
+  }
+  .testi {
+    margin: 0.5rem;}
+}

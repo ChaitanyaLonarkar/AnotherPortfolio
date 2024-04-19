@@ -9,65 +9,81 @@ import Projects from '../components/Projects';
 import Timeline from '../components/Timeline';
 import Testimonial from '../components/Testimonial';
 import Contact from '../components/Contact';
+import Animation from '../components/Animation';
+import Preloader from '../components/Preloader';
+import Creative from '../components/Creative';
+import Footer from '../components/Footer';
+import Experience from "../components/Experience";
+
+import  { Toaster } from 'react-hot-toast';
+
 function Home() {
-    const params = useParams();
-    const navigate = useNavigate();
-    
-    const userId = '65b3a22c01d900e96c4219ae'; //John doe
+    //     const params = useParams();
+    //     const navigate = useNavigate();
 
-    const BASE_URL = 'https://portfolio-backend-30mp.onrender.com/api/v1';
+    //     const userId = '65b3a22c01d900e96c4219ae'; //John doe
 
-    const [user, setUser] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
-    const [isSending, setIsSending] = useState(false);
+    //     const BASE_URL = 'https://portfolio-backend-30mp.onrender.com/api/v1';
 
-    useEffect(() => {
-        document.cookie = `portfolio-name=portfolio1`;
-        const fetchUserData = async () => {
-            try {
-                const response = await fetch(`${BASE_URL}/get/user/${params?.user ?? userId}`);
+    //     const [user, setUser] = useState(null);
+    //     const [isLoading, setIsLoading] = useState(true);
+    //     const [isSending, setIsSending] = useState(false);
 
-                const userData = await response.json();
+    //     useEffect(() => {
+    //         document.cookie = `portfolio-name=portfolio1`;
+    //         const fetchUserData = async () => {
+    //             try {
+    //                 const response = await fetch(`${BASE_URL}/get/user/${params?.user ?? userId}`);
 
-                document.title = `${userData?.user?.about?.name + ' - ' + userData?.user?.about?.title}`;
-                setUser(userData?.user);
-                setIsLoading(false);
-                document.body.classList.remove('loaded');
-            } catch (error) {
-                navigate('/');
-                setIsLoading(true);
-                console.error('Error fetching user data:', error);
-            }
-        };
+    //                 const userData = await response.json();
 
-        fetchUserData();
-    }, [params?.user, userId, navigate]);
-    console.log(user);
+    //                 document.title = `${userData?.user?.about?.name + ' - ' + userData?.user?.about?.title}`;
+    //                 setUser(userData?.user);
+    //                 setIsLoading(false);
+    //                 document.body.classList.remove('loaded');
+    //             } catch (error) {
+    //                 navigate('/');
+    //                 setIsLoading(true);
+    //                 console.error('Error fetching user data:', error);
+    //             }
+    //         };
 
+    //         fetchUserData();
+    //     }, [params?.user, userId, navigate]);
+    //     console.log(user);
 
-// filtering all the data from the API
-    const sortedFilteredSkills = user?.skills?.filter((item) => item.enabled)?.sort((a, b) => a.sequence - b.sequence);
-    const sortedFilteredProject = user?.projects?.filter((item) => item.enabled)?.sort((a, b) => a.sequence - b.sequence);
-    const filteredServices = user?.services?.filter((item) => item.enabled);
-    const filteredTestimonials = user?.testimonials?.filter((item) => item.enabled);
-    const filteredSocialHandles = user?.social_handles?.filter((item) => item.enabled);
-    const filteredEducation = user?.timeline?.filter((item) => item.forEducation && item.enabled);
-    const filteredExperience = user?.timeline?.filter((item) => !item.forEducation && item.enabled);
+    // // filtering all the data from the API
+    //     const sortedFilteredSkills = user?.skills?.filter((item) => item.enabled)?.sort((a, b) => a.sequence - b.sequence);
+    //     const sortedFilteredProject = user?.projects?.filter((item) => item.enabled)?.sort((a, b) => a.sequence - b.sequence);
+    //     const filteredServices = user?.services?.filter((item) => item.enabled);
+    //     const filteredTestimonials = user?.testimonials?.filter((item) => item.enabled);
+    //     const filteredSocialHandles = user?.social_handles?.filter((item) => item.enabled);
+    //     const filteredEducation = user?.timeline?.filter((item) => item.forEducation && item.enabled);
+    //     const filteredExperience = user?.timeline?.filter((item) => !item.forEducation && item.enabled);
 
-    if (isLoading) {
-        return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
-    }
+    //     if (isLoading) {
+    //         return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
+    //     }
     return (
         <>
+            <Preloader />
+
             <Header />
+            <Animation />
             <Hero />
-            <About />
-            <Skills />
-            <Projects />
-            <Services />
-            <Timeline />
-            <Testimonial />
-            <Contact />
+            <div id="Allsection" className="Allsection">
+                <Creative />
+
+                <About />
+                <Skills />
+                <Projects />
+                <Experience />
+                <Services />
+                <Testimonial />
+                <Contact />
+                <Toaster />
+                <Footer/>
+            </div>
         </>
     );
 }

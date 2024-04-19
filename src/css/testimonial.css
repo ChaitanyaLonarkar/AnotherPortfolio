@@ -1,0 +1,35 @@
+.testi{
+    margin: 3rem;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.testimonial {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    /* width: 616px; */
+    width: 25rem;
+    background: #577ca63b;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.all-testi{
+    /* display: flex;
+    gap: 3rem; */
+
+}
+.testi .info {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.info .img img{
+    width: 70px;
+    border-radius: 50%;
+}
