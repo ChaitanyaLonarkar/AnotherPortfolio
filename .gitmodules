@@ -1,0 +1,3 @@
+[submodule "Base-Template"]
+	path = Base-Template
+	url = https://github.com/ThePortfolyo/Base-Template.git

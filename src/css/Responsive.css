@@ -628,7 +628,6 @@
     .sl h1,
     .sl .des {
         text-align: center;
-        
     }
     .sl {
         gap: 1rem;
@@ -640,10 +639,10 @@
         font-size: large;
     }
     .sl .des {
-      text-align: center;
-      margin-bottom: 20px;
-
-  }
-  .testi {
-    margin: 0.5rem;}
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .testi {
+        margin: 0.5rem;
+    }
 }
