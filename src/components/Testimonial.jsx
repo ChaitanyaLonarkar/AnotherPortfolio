@@ -39,7 +39,7 @@ function Testimonial() {
             <div className="testi">
                 <div className="pleft " style={{ overflow: 'hidden' }}>
                     <h2 ref={scale}>
-                        Client
+                        Client's
                         <br />
                         Feedback
                     </h2>
